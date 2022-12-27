@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udacity Excercise</title>
+     <link rel="stylesheet" href="css/style.css">
+     <style>
+        #nestedGrid{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-gap: 10px;
+            border: 3px solid white;
+
+        }
+        .photobox{
+            width: 700px;
+            height: 150px;
+            border: 1px solid red;
+            background: #F9Fa4D;
+        }
+        #one{
+            background-image: url('images/waterfall.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-size: 700px; */
+            /* width: 700px; */
+        }
+        #two{
+            background-image: url('images/waterfall.jpg');
+        }
+        #three{
+            background-image: url('images/waterfall.jpg');
+        }
+        #four{
+            background-image: url('images/waterfall.jpg');
+        }
+
+     </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="header box">
+            <h1>Beauty Of Nature</h1>
+        </div>
+        <div class="sidebar box">
+          <h1>Blog Posts</h1>
+          <a href="blog-post.html" target="_blank">Most recent post</a>
+          <!-- Add Link To Blog Here -->
+        </div>
+        <div class="content box"> Content
+            <div id="nestedGrid">
+                <div id="one" class="photobox"></div>
+                <div id="two" class="photobox"></div>
+                <div id="three" class="photobox"></div>
+                <div id="four" class="photobox"></div>
+            </div>
+        </div>
+        <div class="footer box">Footer</div>
+
+    </div>
+    
+</body>
+</html>
